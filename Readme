@@ -1,0 +1,17 @@
+This repository is build website that compress image and text (txt) using Huffman Coding Algorithm
+s
+Code Structure:
+--compressed/
+--output/
+--src/
+    --assets/
+        --css/
+        --font/
+        --images/
+    --js/
+    --py/
+    image_compressor.html
+    text_compressor.html
+--Readme
+
+Deploy: https://compressorwebsite-4n5j5lpa6-transang231s-projects.vercel.app/image_compressor.html
