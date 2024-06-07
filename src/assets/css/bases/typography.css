@@ -1,0 +1,38 @@
+html, body {
+    font-family: "MartianMono-Regular";
+    font-size: 12px;
+}
+
+button {
+    font-family: "MartianMono-Medium";
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: 'MartianMono-Light';
+    src: url('../../font/MartianMono-Light.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'MartianMono-Regular';
+    src: url('../../font/MartianMono-Regular.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'MartianMono-Medium';
+    src: url('../../font/MartianMono-Medium.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'MartianMono-Bold';
+    src: url('../../font/MartianMono-Bold.ttf') format('truetype');
+    font-display: fallback;
+}

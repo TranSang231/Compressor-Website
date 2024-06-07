@@ -1,0 +1,219 @@
+.compressor {
+    position: static;
+}
+.background {
+    background-image: url('../../images/background-compressor.png');
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 900px
+    /* z-index: -1;     */
+}
+
+.heading_wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.heading_wrapper .heading{
+    font-family: 'MartianMono-Light';
+    font-size: 20px;
+    text-align: center;
+}
+
+.heading .highlight {
+    font-family: 'MartianMono-Bold';
+    display:block;
+    margin-top: 10px;
+}
+
+.upload_wrapper {
+    width: 80%;
+    max-width: 900px;
+    height: 260px;
+    margin: 0 auto;
+    /* margin-bottom: 200px; */
+    border: 5px dashed var(--ntrl-min-color);
+}
+
+.upload_wrapper .upload_presentation {
+    width: 100%;
+    height: inherit;
+    background-color: rgba(255, 248, 220, 0.7);
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-upload, #image-upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#text-upload + label,
+#image-upload + label{
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text-upload:focus + label,
+#text-upload + label:hover,
+#image-upload:focus + label,
+#image-upload + label:hover{
+    background-color: var(--secondary-color);
+    color: var(--ntrl-min-color);
+    transition: all 0.3s ease;
+    
+}
+
+#text-upload:focus + label,
+#image-upload:focus + label{
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#text-upload + label *,
+#image-upload + label *{
+    pointer-events: none;
+}
+
+#text-upload + label .upload_icon,
+#image-upload + label .upload_icon{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload_wrapper .btn {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+    
+.upload_wrapper .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--ntrl-min-color);
+    transition: all 0.3s ease;
+}
+
+.compression-info {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.compression-info th,
+.compression-info td {
+    padding: 8px;
+    text-align: center;    
+}
+
+.compression-info th:first-child,
+.compression-info td:first-child {
+    width: 40%;
+}
+
+.compression-info th {
+    background-color: var(--tertiary-color);
+    color: var(--ntrl-min-color);
+}
+
+.compression-info td {
+    background-color: #fff;
+}
+
+.compression-info tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.compression-info tr:hover {
+    background-color: #e0e0e0;
+}
+
+.btn_download {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--ntrl-min-color);
+    padding: 5px 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .heading_wrapper {
+        padding-top: 100px;
+        padding-bottom: 150px
+    }
+
+    .heading_wrapper .heading {
+        font-size: 32px;
+    }
+
+    .heading .highlight {
+        margin-top: 20px;
+    }
+
+    #text-upload + label, 
+    #image-upload + label{
+        padding: 15px;
+    }
+
+    #text-upload + label .upload_icon,
+    #image-upload + label .upload_icon{
+        font-size: 30px;
+        padding-right: 15px
+    }
+
+    .upload_wrapper .btn {
+        font-size: 16px;
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading_wrapper {
+        padding-top: 120px;
+    }
+
+    .heading_wrapper .heading {
+        font-size: 48px;
+    }
+
+    .heading .highlight {
+        margin-top: 30px;
+    }
+
+        #text-upload + label {
+        padding: 20px;
+    }
+
+    .upload_wrapper .btn {
+        font-size: 18px;
+        margin-top: 40px;
+        padding: 15px 50px;
+        border-radius: 40px;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo-website.png" >
+    <script src="https://kit.fontawesome.com/0e44b19c7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+<body>
+    <header class="navbar_wrapper">
+        <nav class="menu">
+            <div class="menu_logo">
+                <a href="./" class="logo_link">
+                    <picture>
+                        <source srcset="./assets/images/logo-menu.png" media="(min-width: 768px)">
+                        <source srcset="./assets/images/logo-website.png" media="(max-width: 768px)">
+                        <img src="./assets/images/logo-menu.png" alt="logo"  class="logo_image">
+                    </picture>
+                </a>
+            </div>  
+            <div class="menu_container">
+                <ul class="menu_list">
+                    <li class="menu_item">
+                        <a href="./text_compressor.html" class="menu_link">Text</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="./image_compressor.html" class="menu_link">Image</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="./" class="menu_link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    <main>
+        <section class="container compressor">
+            <div class="background">
+                <div class="heading_wrapper">
+                    <h1 class="heading">Fast & efficient text <span class="highlight">compression</span></h1>
+                </div> 
+                <div class="upload_wrapper">
+                    <div class="upload_presentation">
+                        <input class="upload" id="text-upload" type="file" name="text-upload" accept = ".txt"/>
+                        <label for="text-upload">
+                            <i class="fa-solid fa-upload upload_icon"></i>
+                            <span>Choose a file</span>
+                        </label>
+                    </div>
+                    <div class="button_wrapper">
+                        <button class="btn btn_compress">Compress</button>
+                        <button class="btn btn_deCompress">DeCompress</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">   
+            <h2 class="footer_title">compressor</h2>
+            <p class="footer_description">© 2024 Compressor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/handleTextWeb.js"></script>
+</body>
+</html>
